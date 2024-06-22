@@ -1,0 +1,89 @@
+[2024-06-21 13:19:37,668: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-21 13:19:37,668: ERROR: stage_01_data_ingestion: [Errno 2] No such file or directory: 'config\\config.yaml']
+Traceback (most recent call last):
+  File "E:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 31, in <module>
+    obj.main()
+  File "E:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 18, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\config\configuration.py", line 17, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\utils\common.py", line 37, in read_yaml
+    raise e
+  File "e:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\utils\common.py", line 30, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+         ^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'config\\config.yaml'
+[2024-06-21 13:49:21,784: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-21 13:49:21,802: ERROR: stage_01_data_ingestion: [Errno 2] No such file or directory: 'config\\config.yaml']
+Traceback (most recent call last):
+  File "E:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 31, in <module>
+    obj.main()
+  File "E:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 18, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\config\configuration.py", line 22, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\utils\common.py", line 37, in read_yaml
+    raise e
+  File "e:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\utils\common.py", line 30, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+         ^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'config\\config.yaml'
+[2024-06-21 13:52:53,173: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-21 13:52:53,220: INFO: common: yaml file: e:\cv projects\Deep Learning MLFlow and DVC\config\config.yaml loaded successfully]
+[2024-06-21 13:52:53,221: ERROR: stage_01_data_ingestion: [Errno 2] No such file or directory: 'params.yaml']
+Traceback (most recent call last):
+  File "E:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 21, in main
+    config = ConfigurationManager(config_filepath)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\config\configuration.py", line 23, in __init__
+    self.params = read_yaml(params_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\utils\common.py", line 37, in read_yaml
+    raise e
+  File "e:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\utils\common.py", line 30, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+         ^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'params.yaml'
+[2024-06-21 14:03:08,503: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-21 14:03:08,504: INFO: common: yaml file: e:\cv projects\Deep Learning MLFlow and DVC\config\config.yaml loaded successfully]
+[2024-06-21 14:03:08,505: INFO: common: yaml file: e:\cv projects\Deep Learning MLFlow and DVC\params.yaml loaded successfully]
+[2024-06-21 14:03:08,505: INFO: common: created directory at: artifacts]
+[2024-06-21 14:03:08,506: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-21 14:03:08,506: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1uoznzhp0uB0gOTIFkNIFm5Jiy7l3U716/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-21 14:03:25,960: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1uoznzhp0uB0gOTIFkNIFm5Jiy7l3U716/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-21 14:03:28,754: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-21 14:08:24,428: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-21 14:08:24,429: INFO: common: yaml file: e:\cv projects\Deep Learning MLFlow and DVC\config\config.yaml loaded successfully]
+[2024-06-21 14:08:24,430: INFO: common: yaml file: e:\cv projects\Deep Learning MLFlow and DVC\params.yaml loaded successfully]
+[2024-06-21 14:08:24,431: INFO: common: created directory at: artifacts]
+[2024-06-21 14:08:24,448: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-21 14:08:24,448: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1uoznzhp0uB0gOTIFkNIFm5Jiy7l3U716/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-21 14:08:42,599: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1uoznzhp0uB0gOTIFkNIFm5Jiy7l3U716/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-21 14:08:47,557: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-21 14:13:56,718: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-21 14:13:56,719: INFO: common: yaml file: e:\cv projects\Deep Learning MLFlow and DVC\config\config.yaml loaded successfully]
+[2024-06-21 14:13:56,720: INFO: common: yaml file: e:\cv projects\Deep Learning MLFlow and DVC\params.yaml loaded successfully]
+[2024-06-21 14:13:56,721: INFO: common: created directory at: artifacts]
+[2024-06-21 14:13:56,721: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-21 14:13:56,722: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1uoznzhp0uB0gOTIFkNIFm5Jiy7l3U716/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-21 14:14:13,896: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1uoznzhp0uB0gOTIFkNIFm5Jiy7l3U716/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-21 14:14:17,858: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
