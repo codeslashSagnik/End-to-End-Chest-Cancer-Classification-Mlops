@@ -87,3 +87,78 @@ x==========x]
 [2024-06-21 14:14:17,858: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2024-06-22 13:25:57,064: INFO: stage_02_prepare_base_model: *******************]
+[2024-06-22 13:25:57,073: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-22 13:25:57,073: ERROR: stage_02_prepare_base_model: [Errno 2] No such file or directory: 'config\\config.yaml']
+Traceback (most recent call last):
+  File "E:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 32, in <module>
+    obj.main()
+  File "E:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 19, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\config\configuration.py", line 23, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\utils\common.py", line 37, in read_yaml
+    raise e
+  File "e:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\utils\common.py", line 30, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+         ^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'config\\config.yaml'
+[2024-06-23 11:50:37,715: INFO: stage_02_prepare_base_model: *******************]
+[2024-06-23 11:50:37,721: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-23 11:50:37,722: ERROR: stage_02_prepare_base_model: [Errno 2] No such file or directory: 'config\\config.yaml']
+Traceback (most recent call last):
+  File "E:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 32, in <module>
+    obj.main()
+  File "E:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 19, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\config\configuration.py", line 23, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\utils\common.py", line 37, in read_yaml
+    raise e
+  File "e:\cv projects\Deep Learning MLFlow and DVC\src\cnnClassifier\utils\common.py", line 30, in read_yaml
+    with open(path_to_yaml) as yaml_file:
+         ^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'config\\config.yaml'
+[2024-06-23 11:55:25,189: INFO: stage_02_prepare_base_model: *******************]
+[2024-06-23 11:55:25,197: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-23 11:55:25,254: INFO: common: yaml file: e:\cv projects\Deep Learning MLFlow and DVC\config\config.yaml loaded successfully]
+[2024-06-23 11:55:25,266: INFO: common: yaml file: e:\cv projects\Deep Learning MLFlow and DVC\params.yaml loaded successfully]
+[2024-06-23 11:55:25,295: INFO: common: created directory at: artifacts]
+[2024-06-23 11:55:25,296: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-23 11:55:26,330: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-23 11:55:26,727: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-23 11:55:26,884: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-06-23 12:03:59,857: INFO: stage_02_prepare_base_model: *******************]
+[2024-06-23 12:03:59,858: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-23 12:03:59,860: INFO: common: yaml file: e:\cv projects\Deep Learning MLFlow and DVC\config\config.yaml loaded successfully]
+[2024-06-23 12:03:59,861: INFO: common: yaml file: e:\cv projects\Deep Learning MLFlow and DVC\params.yaml loaded successfully]
+[2024-06-23 12:03:59,862: INFO: common: created directory at: artifacts]
+[2024-06-23 12:03:59,862: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-23 12:04:00,193: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-23 12:04:00,359: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-23 12:04:00,555: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-06-23 12:08:44,753: INFO: stage_02_prepare_base_model: *******************]
+[2024-06-23 12:08:44,754: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-23 12:08:44,756: INFO: common: yaml file: e:\cv projects\Deep Learning MLFlow and DVC\config\config.yaml loaded successfully]
+[2024-06-23 12:08:44,757: INFO: common: yaml file: e:\cv projects\Deep Learning MLFlow and DVC\params.yaml loaded successfully]
+[2024-06-23 12:08:44,758: INFO: common: created directory at: artifacts]
+[2024-06-23 12:08:44,758: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-23 12:08:45,086: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-23 12:08:45,264: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-06-23 12:08:45,331: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]

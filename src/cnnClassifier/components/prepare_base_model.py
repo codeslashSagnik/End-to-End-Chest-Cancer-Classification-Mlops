@@ -3,8 +3,10 @@ import urllib.request as request
 from zipfile import ZipFile
 import tensorflow as tf
 from pathlib import Path
+import sys
 from cnnClassifier.entity.config_entity import PrepareBaseModelConfig
-                                                
+root_directory = Path('e:/cv projects/Deep Learning MLFlow and DVC')
+sys.path.append(str(root_directory / 'src'))                                               
 
 
 
@@ -20,8 +22,8 @@ class PrepareBaseModel:
             weights=self.config.params_weights,
             include_top=self.config.params_include_top
         )
-
-        self.save_model(path=self.config.base_model_path, model=self.model)
+        actual_path_base="e:/cv projects/Deep Learning MLFlow and DVC/artifacts/prepare_base_model/base_model.h5"
+        self.save_model(path=actual_path_base, model=self.model)
 
 
     
@@ -63,8 +65,8 @@ class PrepareBaseModel:
             freeze_till=None,
             learning_rate=self.config.params_learning_rate
         )
-
-        self.save_model(path=self.config.updated_base_model_path, model=self.full_model)
+        actual_path="e:/cv projects/Deep Learning MLFlow and DVC/artifacts/prepare_base_model/updated_base_model.h5"
+        self.save_model(path=actual_path, model=self.full_model)
     
 
 
