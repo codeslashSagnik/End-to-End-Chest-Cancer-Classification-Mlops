@@ -15,7 +15,7 @@ class Training:
     
     def get_base_model(self):
         self.model = tf.keras.models.load_model(
-            self.config.updated_base_model_path
+            'e:/cv projects/Deep Learning MLFlow and DVC/artifacts/prepare_base_model/updated_base_model.h5'
         )
 
     def train_valid_generator(self):
@@ -83,7 +83,7 @@ class Training:
         )
 
         self.save_model(
-            path=self.config.trained_model_path,
+            path="e:/cv projects/Deep Learning MLFlow and DVC/artifacts/training/model.h5",
             model=self.model
         )
 
