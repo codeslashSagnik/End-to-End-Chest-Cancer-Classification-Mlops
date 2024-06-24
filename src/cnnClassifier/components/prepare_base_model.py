@@ -22,8 +22,8 @@ class PrepareBaseModel:
             weights=self.config.params_weights,
             include_top=self.config.params_include_top
         )
-        actual_path_base="e:/cv projects/Deep Learning MLFlow and DVC/artifacts/prepare_base_model/base_model.h5"
-        self.save_model(path=actual_path_base, model=self.model)
+
+        self.save_model(path=self.config.base_model_path, model=self.model)
 
 
     
@@ -65,13 +65,11 @@ class PrepareBaseModel:
             freeze_till=None,
             learning_rate=self.config.params_learning_rate
         )
-        actual_path="e:/cv projects/Deep Learning MLFlow and DVC/artifacts/prepare_base_model/updated_base_model.h5"
-        self.save_model(path=actual_path, model=self.full_model)
+
+        self.save_model(path=self.config.updated_base_model_path, model=self.full_model)
     
 
 
     @staticmethod
     def save_model(path: Path, model: tf.keras.Model):
         model.save(path)
-
-

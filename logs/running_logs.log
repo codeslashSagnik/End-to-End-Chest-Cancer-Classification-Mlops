@@ -23,3 +23,325 @@
 [2024-06-23 23:12:22,652: INFO: common: yaml file: params.yaml loaded successfully]
 [2024-06-23 23:12:22,690: INFO: common: created directory at: artifacts]
 [2024-06-23 23:12:22,725: INFO: common: created directory at: artifacts\training]
+[2024-06-23 23:16:49,897: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-23 23:16:49,941: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-23 23:16:49,942: INFO: common: created directory at: artifacts]
+[2024-06-23 23:16:49,943: INFO: common: created directory at: artifacts\training]
+[2024-06-23 23:18:26,254: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-23 23:18:26,314: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-23 23:18:26,315: INFO: common: created directory at: artifacts]
+[2024-06-23 23:18:26,316: INFO: common: created directory at: artifacts\training]
+[2024-06-23 23:18:26,317: ERROR: 415074968: Model file not found at artifacts\prepare_base_model\base_model_updated.h5]
+Traceback (most recent call last):
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\415074968.py", line 11, in <module>
+    raise FileNotFoundError(f"Model file not found at {training.config.updated_base_model_path}")
+FileNotFoundError: Model file not found at artifacts\prepare_base_model\base_model_updated.h5
+[2024-06-23 23:21:08,955: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-23 23:21:08,957: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-23 23:21:08,959: INFO: common: created directory at: artifacts]
+[2024-06-23 23:21:08,960: INFO: common: created directory at: artifacts\training]
+[2024-06-23 23:21:16,160: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-23 23:21:16,205: ERROR: 415074968: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\Chest-CT-Scan-data']
+Traceback (most recent call last):
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\415074968.py", line 14, in <module>
+    training.train_valid_generator()
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\1484518680.py", line 28, in train_valid_generator
+    self.valid_generator = valid_datagenerator.flow_from_directory(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 1138, in flow_from_directory
+    return DirectoryIterator(
+           ^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 453, in __init__
+    for subdir in sorted(os.listdir(directory)):
+                         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\Chest-CT-Scan-data'
+[2024-06-23 23:32:14,612: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-23 23:32:14,614: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-23 23:32:14,616: INFO: common: created directory at: artifacts]
+[2024-06-23 23:32:14,660: INFO: common: created directory at: artifacts\training]
+[2024-06-23 23:32:15,003: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-23 23:32:15,006: ERROR: 415074968: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\Chest-CT-Scan-data']
+Traceback (most recent call last):
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\415074968.py", line 14, in <module>
+    training.train_valid_generator()
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\1484518680.py", line 28, in train_valid_generator
+    self.valid_generator = valid_datagenerator.flow_from_directory(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 1138, in flow_from_directory
+    return DirectoryIterator(
+           ^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 453, in __init__
+    for subdir in sorted(os.listdir(directory)):
+                         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\Chest-CT-Scan-data'
+[2024-06-23 23:32:45,984: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-23 23:32:45,986: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-23 23:32:45,987: INFO: common: created directory at: artifacts]
+[2024-06-23 23:32:45,988: INFO: common: created directory at: artifacts\training]
+[2024-06-23 23:32:46,189: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-23 23:32:46,192: ERROR: 415074968: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\Chest-CT-Scan-data']
+Traceback (most recent call last):
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\415074968.py", line 14, in <module>
+    training.train_valid_generator()
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\1484518680.py", line 28, in train_valid_generator
+    self.valid_generator = valid_datagenerator.flow_from_directory(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 1138, in flow_from_directory
+    return DirectoryIterator(
+           ^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 453, in __init__
+    for subdir in sorted(os.listdir(directory)):
+                         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\Chest-CT-Scan-data'
+[2024-06-23 23:32:52,356: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-23 23:32:52,398: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-23 23:32:52,437: INFO: common: created directory at: artifacts]
+[2024-06-23 23:32:52,438: INFO: common: created directory at: artifacts\training]
+[2024-06-23 23:32:52,703: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-23 23:32:52,706: ERROR: 415074968: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\Chest-CT-Scan-data']
+Traceback (most recent call last):
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\415074968.py", line 14, in <module>
+    training.train_valid_generator()
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\1484518680.py", line 28, in train_valid_generator
+    self.valid_generator = valid_datagenerator.flow_from_directory(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 1138, in flow_from_directory
+    return DirectoryIterator(
+           ^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 453, in __init__
+    for subdir in sorted(os.listdir(directory)):
+                         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\Chest-CT-Scan-data'
+[2024-06-23 23:41:28,942: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-23 23:41:29,056: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-23 23:41:29,089: INFO: common: created directory at: artifacts]
+[2024-06-23 23:41:29,100: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-23 23:41:29,109: INFO: 586056171: Downloading data from https://drive.google.com/file/d/1uoznzhp0uB0gOTIFkNIFm5Jiy7l3U716/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-23 23:41:48,038: INFO: 586056171: Downloaded data from https://drive.google.com/file/d/1uoznzhp0uB0gOTIFkNIFm5Jiy7l3U716/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-23 23:42:12,860: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-23 23:42:12,862: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-23 23:42:12,863: INFO: common: created directory at: artifacts]
+[2024-06-23 23:42:12,864: INFO: common: created directory at: artifacts\training]
+[2024-06-23 23:42:13,910: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-23 23:42:13,913: ERROR: 415074968: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\Chest-CT-Scan-data']
+Traceback (most recent call last):
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\415074968.py", line 14, in <module>
+    training.train_valid_generator()
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\1484518680.py", line 28, in train_valid_generator
+    self.valid_generator = valid_datagenerator.flow_from_directory(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 1138, in flow_from_directory
+    return DirectoryIterator(
+           ^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 453, in __init__
+    for subdir in sorted(os.listdir(directory)):
+                         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\Chest-CT-Scan-data'
+[2024-06-23 23:42:23,022: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-23 23:42:23,024: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-23 23:42:23,025: INFO: common: created directory at: artifacts]
+[2024-06-23 23:42:23,026: INFO: common: created directory at: artifacts\training]
+[2024-06-23 23:42:23,289: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-23 23:42:23,292: ERROR: 415074968: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\Chest-CT-Scan-data']
+Traceback (most recent call last):
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\415074968.py", line 14, in <module>
+    training.train_valid_generator()
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\1484518680.py", line 28, in train_valid_generator
+    self.valid_generator = valid_datagenerator.flow_from_directory(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 1138, in flow_from_directory
+    return DirectoryIterator(
+           ^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 453, in __init__
+    for subdir in sorted(os.listdir(directory)):
+                         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\Chest-CT-Scan-data'
+[2024-06-24 00:09:59,975: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-24 00:09:59,977: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-24 00:09:59,978: INFO: common: created directory at: artifacts]
+[2024-06-24 00:09:59,980: INFO: common: created directory at: artifacts\training]
+[2024-06-24 00:10:00,923: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-24 00:10:00,926: ERROR: 415074968: [WinError 3] The system cannot find the path specified: 'e:\\cv projects\\Deep Learning MLFlow and DVC\\artifacts\\data_ingestion\\Chest-CT-Scan-data']
+Traceback (most recent call last):
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\415074968.py", line 14, in <module>
+    training.train_valid_generator()
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\1484518680.py", line 28, in train_valid_generator
+    self.valid_generator = valid_datagenerator.flow_from_directory(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 1138, in flow_from_directory
+    return DirectoryIterator(
+           ^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 453, in __init__
+    for subdir in sorted(os.listdir(directory)):
+                         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'e:\\cv projects\\Deep Learning MLFlow and DVC\\artifacts\\data_ingestion\\Chest-CT-Scan-data'
+[2024-06-24 00:10:57,618: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-24 00:10:57,620: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-24 00:10:57,621: INFO: common: created directory at: artifacts]
+[2024-06-24 00:10:57,622: INFO: common: created directory at: artifacts\training]
+[2024-06-24 00:10:57,833: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-24 00:10:57,836: ERROR: 415074968: [WinError 3] The system cannot find the path specified: 'e:\\cv projects\\Deep Learning MLFlow and DVC\\artifacts\\data_ingestion\\Chest-CT-Scan-data']
+Traceback (most recent call last):
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\415074968.py", line 14, in <module>
+    training.train_valid_generator()
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\1484518680.py", line 28, in train_valid_generator
+    self.valid_generator = valid_datagenerator.flow_from_directory(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 1138, in flow_from_directory
+    return DirectoryIterator(
+           ^^^^^^^^^^^^^^^^^^
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 453, in __init__
+    for subdir in sorted(os.listdir(directory)):
+                         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'e:\\cv projects\\Deep Learning MLFlow and DVC\\artifacts\\data_ingestion\\Chest-CT-Scan-data'
+[2024-06-24 00:12:22,828: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-24 00:12:22,830: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-24 00:12:22,831: INFO: common: created directory at: artifacts]
+[2024-06-24 00:12:22,833: INFO: common: created directory at: artifacts\training]
+[2024-06-24 00:12:23,094: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-24 00:12:24,132: ERROR: 415074968: Must provide at least one structure]
+Traceback (most recent call last):
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\415074968.py", line 15, in <module>
+    training.train()
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\1484518680.py", line 67, in train
+    self.model.fit(
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\tree\optree_impl.py", line 76, in map_structure
+    raise ValueError("Must provide at least one structure")
+ValueError: Must provide at least one structure
+[2024-06-24 00:15:03,746: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-24 00:15:03,749: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-24 00:15:03,749: INFO: common: created directory at: artifacts]
+[2024-06-24 00:15:03,751: INFO: common: created directory at: artifacts\training]
+[2024-06-24 00:15:03,751: ERROR: 415074968: TrainingConfig.__init__() got an unexpected keyword argument 'data_dir']
+Traceback (most recent call last):
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\415074968.py", line 3, in <module>
+    training_config = config.get_training_config()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\1649784201.py", line 26, in get_training_config
+    return TrainingConfig(
+           ^^^^^^^^^^^^^^^
+TypeError: TrainingConfig.__init__() got an unexpected keyword argument 'data_dir'
+[2024-06-24 00:16:27,657: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-24 00:16:27,660: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-24 00:16:27,661: INFO: common: created directory at: artifacts]
+[2024-06-24 00:16:27,662: INFO: common: created directory at: artifacts\training]
+[2024-06-24 00:16:27,663: ERROR: 415074968: TrainingConfig.__init__() got an unexpected keyword argument 'data_dir']
+Traceback (most recent call last):
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\415074968.py", line 3, in <module>
+    training_config = config.get_training_config()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\1649784201.py", line 26, in get_training_config
+    return TrainingConfig(
+           ^^^^^^^^^^^^^^^
+TypeError: TrainingConfig.__init__() got an unexpected keyword argument 'data_dir'
+[2024-06-24 00:16:31,140: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-24 00:16:31,142: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-24 00:16:31,143: INFO: common: created directory at: artifacts]
+[2024-06-24 00:16:31,144: INFO: common: created directory at: artifacts\training]
+[2024-06-24 00:16:31,145: ERROR: 415074968: TrainingConfig.__init__() got an unexpected keyword argument 'data_dir']
+Traceback (most recent call last):
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\415074968.py", line 3, in <module>
+    training_config = config.get_training_config()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\1649784201.py", line 26, in get_training_config
+    return TrainingConfig(
+           ^^^^^^^^^^^^^^^
+TypeError: TrainingConfig.__init__() got an unexpected keyword argument 'data_dir'
+[2024-06-24 00:19:02,754: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-24 00:19:02,756: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-24 00:19:02,757: INFO: common: created directory at: artifacts]
+[2024-06-24 00:19:02,758: INFO: common: created directory at: artifacts\training]
+[2024-06-24 00:19:03,093: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-24 00:19:03,150: ERROR: 415074968: Must provide at least one structure]
+Traceback (most recent call last):
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\415074968.py", line 15, in <module>
+    training.train()
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\2224670029.py", line 67, in train
+    self.model.fit(
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\tree\optree_impl.py", line 76, in map_structure
+    raise ValueError("Must provide at least one structure")
+ValueError: Must provide at least one structure
+[2024-06-24 00:19:27,234: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-24 00:19:27,236: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-24 00:19:27,237: INFO: common: created directory at: artifacts]
+[2024-06-24 00:19:27,239: INFO: common: created directory at: artifacts\training]
+[2024-06-24 00:19:27,608: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-24 00:19:27,617: ERROR: 1257131579: Must provide at least one structure]
+Traceback (most recent call last):
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\1257131579.py", line 20, in <module>
+    training.train()
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\2224670029.py", line 67, in train
+    self.model.fit(
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "e:\cv projects\Deep Learning MLFlow and DVC\env\Lib\site-packages\keras\src\tree\optree_impl.py", line 76, in map_structure
+    raise ValueError("Must provide at least one structure")
+ValueError: Must provide at least one structure
+[2024-06-24 00:21:26,954: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-24 00:21:26,956: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-24 00:21:26,957: INFO: common: created directory at: artifacts]
+[2024-06-24 00:21:26,958: INFO: common: created directory at: artifacts\training]
+[2024-06-24 00:21:26,959: ERROR: 1257131579: Data directory not found at e:\cv projects\Deep Learning MLFlow and DVC\artifacts\data_ingestion\Chest-CT-Scan-data]
+Traceback (most recent call last):
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\1257131579.py", line 16, in <module>
+    raise FileNotFoundError(f"Data directory not found at {training.config.training_data}")
+FileNotFoundError: Data directory not found at e:\cv projects\Deep Learning MLFlow and DVC\artifacts\data_ingestion\Chest-CT-Scan-data
+[2024-06-24 00:21:33,378: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-24 00:21:33,393: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-24 00:21:33,394: INFO: common: created directory at: artifacts]
+[2024-06-24 00:21:33,395: INFO: common: created directory at: artifacts\training]
+[2024-06-24 00:21:33,396: ERROR: 1257131579: Data directory not found at e:\cv projects\Deep Learning MLFlow and DVC\artifacts\data_ingestion\Chest-CT-Scan-data]
+Traceback (most recent call last):
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\1257131579.py", line 16, in <module>
+    raise FileNotFoundError(f"Data directory not found at {training.config.training_data}")
+FileNotFoundError: Data directory not found at e:\cv projects\Deep Learning MLFlow and DVC\artifacts\data_ingestion\Chest-CT-Scan-data
+[2024-06-24 00:24:37,328: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-24 00:24:37,331: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-24 00:24:37,332: INFO: common: created directory at: artifacts]
+[2024-06-24 00:24:37,333: INFO: common: created directory at: artifacts\training]
+[2024-06-24 00:24:37,334: ERROR: 1257131579: Data directory not found at e:\cv projects\Deep Learning MLFlow and DVC\artifacts\data_ingestion\Chest-CT-Scan-data]
+Traceback (most recent call last):
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\1257131579.py", line 16, in <module>
+    raise FileNotFoundError(f"Data directory not found at {training.config.training_data}")
+FileNotFoundError: Data directory not found at e:\cv projects\Deep Learning MLFlow and DVC\artifacts\data_ingestion\Chest-CT-Scan-data
+[2024-06-24 00:26:25,506: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-24 00:26:25,509: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-24 00:26:25,510: INFO: common: created directory at: artifacts]
+[2024-06-24 00:26:25,562: INFO: common: created directory at: artifacts\training]
+[2024-06-24 00:26:25,563: ERROR: 1257131579: Data directory not found at e:\cv projects\Deep Learning MLFlow and DVC\artifacts\data_ingestion\Chest-CT-Scan-data]
+Traceback (most recent call last):
+  File "C:\Users\Sagnik\AppData\Local\Temp\ipykernel_12040\1257131579.py", line 16, in <module>
+    raise FileNotFoundError(f"Data directory not found at {training.config.training_data}")
+FileNotFoundError: Data directory not found at e:\cv projects\Deep Learning MLFlow and DVC\artifacts\data_ingestion\Chest-CT-Scan-data
+[2024-06-24 00:32:02,729: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-24 00:32:02,731: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-24 00:32:02,732: INFO: common: created directory at: artifacts]
+[2024-06-24 00:32:02,733: INFO: common: created directory at: artifacts\training]
+[2024-06-24 00:32:02,918: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-24 00:40:38,129: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-24 00:40:38,131: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-24 00:41:44,424: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-24 00:41:44,427: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-24 00:41:44,427: INFO: common: created directory at: artifacts]
+[2024-06-24 00:44:01,921: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-24 00:44:01,923: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-24 00:44:01,924: INFO: common: created directory at: artifacts]
+[2024-06-24 00:44:53,369: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-24 00:44:53,371: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-24 00:44:53,372: INFO: common: created directory at: artifacts]
+[2024-06-24 00:44:53,373: INFO: common: created directory at: artifacts\training]
+[2024-06-24 00:44:53,566: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-24 00:46:29,936: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-24 00:46:29,939: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-24 00:46:29,940: INFO: common: created directory at: artifacts]
+[2024-06-24 00:46:29,940: INFO: common: created directory at: artifacts\training]
+[2024-06-24 00:46:30,127: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-24 00:46:46,680: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-24 00:46:46,682: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-24 00:46:46,683: INFO: common: created directory at: artifacts]
+[2024-06-24 00:46:46,684: INFO: common: created directory at: artifacts\training]
+[2024-06-24 00:46:46,895: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]

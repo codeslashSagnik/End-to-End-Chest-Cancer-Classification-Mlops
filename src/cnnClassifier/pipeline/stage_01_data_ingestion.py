@@ -19,19 +19,16 @@ class DataIngestionTrainingPipeline:
     def main(self):
         try:
             logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
-            config = ConfigurationManager(config_filepath,params_filepath)
+            config = ConfigurationManager(config_filepath, params_filepath)
             data_ingestion_config = config.get_data_ingestion_config()
             data_ingestion = DataIngestion(config=data_ingestion_config)
             data_ingestion.download_file()
             data_ingestion.extract_zip_file()
+            data_ingestion.copy_data_to_main_directory()
             logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
-
         except Exception as e:
             logger.exception(e)
             raise e
-
-
-
 
 if __name__ == '__main__':
     obj = DataIngestionTrainingPipeline()
